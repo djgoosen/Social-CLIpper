@@ -10,7 +10,7 @@
 [![Commit history](https://img.shields.io/badge/commits-history-181717?logo=github)](https://github.com/djgoosen/Social-CLIpper/commits/main)
 [![Pylint](https://img.shields.io/badge/lint-pylint-ffc300?logo=python&logoColor=black)](https://pylint.pycqa.org/)
 
-"Social CLIpper" (aka `social-clipr`) is a simple, 100% local, CLI-first pipeline that turns any local `.mp4` into a transcript, captions (`.srt` / `.vtt`), a rendered output video, and a run summary under `outputs/<video-stem>/`.
+"Social CLIpper" (aka `social-clipr`) is a simple, 100% local, CLI-first pipeline tool that turns any local `.mp4` into a transcript, captions (`.srt` / `.vtt`), a rendered output video, and a run summary under `outputs/<video-stem>/`.
 
 Recent example video: [Social CLIpper Example Video](https://youtu.be/xUkl7-e__z8)
 
