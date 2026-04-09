@@ -1,0 +1,15 @@
+.venv/
+*.egg-info/
+__pycache__/
+*.mp4
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+outputs/*
+!outputs/.gitkeep
+.DS_Store
+AGENTS.md
+git_history_compact.txt
+sprints/

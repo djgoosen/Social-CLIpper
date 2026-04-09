@@ -1,0 +1,12 @@
+{
+  "id": "shorts-vertical-fit",
+  "width": 1080,
+  "height": 1920,
+  "frame_rate": 30,
+  "video_filter": "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2",
+  "video_codec": "libx264",
+  "crf": 23,
+  "encoder_preset": "fast",
+  "audio_codec": "aac",
+  "audio_bitrate_kbps": 128
+}

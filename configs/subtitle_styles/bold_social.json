@@ -1,0 +1,10 @@
+{
+  "id": "bold_social",
+  "font_family": "Arial Black",
+  "font_size": 44,
+  "primary_color": "&H00FFFF&",
+  "outline_color": "&H000000&",
+  "outline_width": 4,
+  "margin_v": 152,
+  "alignment": 2
+}

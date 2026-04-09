@@ -1,0 +1,10 @@
+{
+  "id": "purple_lower_third",
+  "font_family": "Phosphate",
+  "font_size": 96,
+  "primary_color": "&HD355BA&",
+  "outline_color": "&H000000&",
+  "outline_width": 2,
+  "margin_v": 160,
+  "alignment": 2
+}

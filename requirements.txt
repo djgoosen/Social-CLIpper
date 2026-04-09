@@ -1,0 +1,28 @@
+# Social-CLIpper — pip dependencies
+#
+# Install (from repo root, venv recommended):
+#   pip install -r requirements.txt
+#
+# System tools (not installable via this file):
+#   - FFmpeg on PATH for encode / burn-in. Subtitle burn-in needs the `subtitles`
+#     filter (libass). On macOS with Homebrew: brew reinstall ffmpeg
+#   - If libass is missing: SOCIAL_CLIPR_RENDER=stub skips transcode (see README).
+
+# Editable install; pyproject.toml has no required third-party runtime deps.
+-e .
+
+# Test suite
+pytest>=7.0
+
+# --- Optional: speech-to-text ---
+# Default configs/stt.json uses whisper_cli. Install into the *same* venv you use
+# for `python -m social_clipr` so the `whisper` executable is on PATH (avoids stub).
+# Warning: pulls PyTorch; download is large.
+# openai-whisper
+
+# Alternative engine: set "engine": "faster_whisper" in configs/stt.json
+# faster-whisper
+openai-whisper
+black
+ruff
+pylint

@@ -1,0 +1,12 @@
+{
+  "id": "youtube-horizontal",
+  "width": 1920,
+  "height": 1080,
+  "frame_rate": 30,
+  "video_filter": "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2",
+  "video_codec": "libx264",
+  "crf": 23,
+  "encoder_preset": "fast",
+  "audio_codec": "aac",
+  "audio_bitrate_kbps": 128
+}

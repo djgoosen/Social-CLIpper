@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-clipr"
+version = "0.1.0"
+description = "Simple, 100% local, CLI-first video pipeline scaffolding for Social CLIpper."
+readme = "README.md"
+license = { file = "LICENSE.md" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# Used when configs/stt.json sets engine whisper_cli (default). Pulls PyTorch; omit for CI/stub-only.
+whisper = ["openai-whisper"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.8.0",
+    "pylint>=3.3.0",
+]
+
+[project.scripts]
+social-clipr = "social_clipr.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["social_clipr"]
+# Target: 100% line coverage. Branch coverage off — partial branches on xor-style
+# checks and platform-specific paths add noise without much signal here.
+branch = false
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+src = ["social_clipr", "tests"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.pylint.main]
+py-version = "3.10"
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.messages_control]
+disable = [
+    "broad-exception-caught",
+    "import-outside-toplevel",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "too-many-arguments",
+    "too-many-branches",
+    "too-many-instance-attributes",
+    "too-many-locals",
+    "too-many-return-statements",
+    "too-many-statements",
+]

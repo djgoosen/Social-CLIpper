@@ -1,0 +1,10 @@
+{
+  "id": "minimal",
+  "font_family": "Arial",
+  "font_size": 36,
+  "primary_color": "&HFFFFFF&",
+  "outline_color": "&H000000&",
+  "outline_width": 2,
+  "margin_v": 160,
+  "alignment": 2
+}
