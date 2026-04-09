@@ -391,3 +391,7 @@ SOCIAL_CLIPR_SMOKE_REAL=1 PYTHON=.venv/bin/python bash scripts/smoke_run.sh
 Pytest includes **`tests/test_smoke.py`**: quick smoke via subprocess, optional real-mode test when `ffmpeg` exists, and **`faster_whisper`** import failure falling back to stub (no model downloads).
 
 Git log: `git log --pretty=format:"%h | %ad | %s" --date=short --numstat --reverse > git_history_compact.txt`
+
+# Credits
+
+Built with Level Up's Pinion.
